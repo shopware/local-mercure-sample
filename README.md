@@ -1,6 +1,6 @@
 # Local Mercure Example with Docker
 ## Introduction
-This is the local mercure example with docker. It is enabled the anonymous mode, will allow all the origins, so it's only for development.
+This is the local mercure example with docker.
 
 ## How to run
 Just run this:
@@ -14,6 +14,7 @@ Default Hub information:
 - Hub URL: `http://localhost:8081/.well-known/mercure`
 - Hub subscriber secret: `MySecret`
 - Hub publisher secret: `MySecret`
+- Anonymous mode is enabled, will allow all the origins.
 
 ### Port
 - Default is `8081`. 
@@ -22,3 +23,10 @@ Default Hub information:
 ### Secret Key
 - Default is `MySecret`. 
 - Change: navigate to `Caddyfile` and update `publisher_jwt` or `subscriber_jwt` to any value you want.
+
+
+### Production
+For security reason, please follow:
+- complicate the secret key.
+- turn off anonymous mode.
+- Specify cors_origins & publish_origins.

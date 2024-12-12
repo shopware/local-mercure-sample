@@ -25,7 +25,7 @@ Default Hub information:
 - Change: navigate to `Caddyfile` and update `publisher_jwt` or `subscriber_jwt` to any value you want.
 
 
-### Production
+## Production
 For security reason, please follow:
 - complicate the secret key.
 - turn off anonymous mode.

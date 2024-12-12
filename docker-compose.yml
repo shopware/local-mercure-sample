@@ -1,0 +1,7 @@
+services:
+  mercure:
+      image: dunglas/mercure
+      volumes:
+        - ./Caddyfile:/etc/caddy/Caddyfile
+      ports:
+        - 8081:80
